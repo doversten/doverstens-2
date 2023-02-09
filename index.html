@@ -24,6 +24,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
 
+    <!-- Smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
     <!-- Plausible -->
     <script defer async data-domain="jarallax.nkdev.info" src="https://plausible.io/js/plausible.outbound-links.js"></script>
     <script>
@@ -46,18 +49,13 @@
         <div class="hero-name names">tällberg</div>
       </div>
     </div>
-   <!-- <div class="demo-gap">
-     <h2>VI GIFTER OSS.</h2>
+    <div class="demo-gap">
       <div class="container text-center">
         <div class="buttons">
-          <a class="button" href="https://github.com/nk-o/jarallax/blob/master/README.md" target="_blank">BOENDE</a>
-          <a class="button" href="https://github.com/nk-o/jarallax/" target="_blank">TOASTMASTER & VÄRDPAR</a>
-          <a class="button" href="https://github.com/nk-o/jarallax/" target="_blank">HUR & NÄR</a>
+          <a class="button" data-scroll href="#toast">BOENDE</a>
+          <a class="button" data-scroll href="#boende">TOASTMASTER & VÄRDPAR</a>
+          <a class="button" data-scroll href="#hurvarnar">HUR & NÄR</a>
         </div>
-      </div>
-    </div>-->
-    <div class="demo-gap">
-      <div class="container">
         <h2>VI GIFTER OSS</h2>
         <p>
           So Give doesn't forth male him. God cattle rule Heaven blessed Beast lesser him so. Fowl
@@ -68,14 +66,15 @@
           creepeth him, were you're together face him beast thing moving Above fourth upon i
           wherein.
         </p>
-        </div>
+      </div>
     </div>
+
     
     <div class="jarallax" data-jarallax data-video-src="https://youtu.be/NAfgOescOpQ"></div>
 
     <div class="demo-gap demo-content lighter-bg">
       <div class="container">
-        <h2>TOASTMASTER & VÄRDPAR</h2>
+        <h2 id="toast">TOASTMASTER & VÄRDPAR</h2>
 
         <div class="jarallax-keep-img demo-float-right" data-speed="0.8">
           <img class="jarallax-img" src="./putte_crop.jpg" alt="" width="400" loading="lazy" />
@@ -113,7 +112,7 @@
 
     <div class="demo-gap demo-content lighter-bg">
       <div class="container">
-        <h2>BOENDE</h2>
+        <h2 id="boende">BOENDE</h2>
         <p>
           So Give doesn't forth male him. God cattle rule Heaven blessed Beast lesser him so. Fowl
           had heaven is very earth it gathering the under it let yielding stars morning upon were
@@ -156,7 +155,7 @@
 
     <div class="demo-gap">
       <div class="container">
-        <h2>HUR? NÄR? VAR?</h2>
+        <h2 id="hurvarnar">HUR? NÄR? VAR?</h2>
         <p>
           So Give doesn't forth male him. God cattle rule Heaven blessed Beast lesser him so. Fowl
           had heaven is very earth it gathering the under it let yielding stars morning upon were
@@ -187,6 +186,10 @@
       jarallax(document.querySelectorAll(".jarallax-keep-img"), {
         keepImg: true,
       });
+    </script>
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
     </script>
   </body>
 </html>
